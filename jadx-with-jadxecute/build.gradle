@@ -1,6 +1,7 @@
 plugins {
 	id 'com.github.ben-manes.versions' version '0.45.0'
 	id 'com.diffplug.spotless' version '6.13.0'
+  id "net.ltgt.errorprone" version "3.1.0"
 }
 
 ext.jadxVersion = System.getenv('JADX_VERSION') ?: "dev"
@@ -10,6 +11,8 @@ println("jadx version: ${jadxVersion}")
 allprojects {
 	apply plugin: 'java'
 	apply plugin: 'checkstyle'
+  apply plugin: "net.ltgt.errorprone"
+
 
 	version = jadxVersion
 
@@ -25,6 +28,17 @@ allprojects {
 		}
 	}
 
+	repositories {
+		mavenLocal()
+		mavenCentral()
+		google()
+		// Commented out for now since we're using a local mapping-io fork atm.
+        // maven {
+		// 	name 'FabricMC'
+		// 	url 'https://maven.fabricmc.net/'
+		// }
+	}
+
 	dependencies {
 		implementation 'org.slf4j:slf4j-api:2.0.6'
 		compileOnly 'org.jetbrains:annotations:24.0.0'
@@ -38,23 +52,21 @@ allprojects {
 		testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.2'
 
 		testCompileOnly 'org.jetbrains:annotations:24.0.0'
+     errorprone("com.google.errorprone:error_prone_core:2.23.0")
 	}
 
 	test {
 		useJUnitPlatform()
 		maxParallelForks = Runtime.runtime.availableProcessors()
 	}
-
-	repositories {
-		mavenLocal()
-		mavenCentral()
-		google()
-		// Commented out for now since we're using a local mapping-io fork atm.
-        // maven {
-		// 	name 'FabricMC'
-		// 	url 'https://maven.fabricmc.net/'
-		// }
-	}
+  tasks.withType(JavaCompile).configureEach {
+   options.errorprone.disableWarningsInGeneratedCode = true
+   options.errorprone.disableAllChecks = true
+   options.errorprone.enable("NullOptional", "NullableOptional",
+     "OptionalMapToOptional", "OptionalNotPresent", "OptionalEquality",
+     "OptionalMapUnusedValue", "OptionalOfRedundantMethod", "UnnecessaryOptionalGet",
+   )
+ }
 }
 
 spotless {
