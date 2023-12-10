@@ -11,7 +11,7 @@ println("jadx version: ${jadxVersion}")
 allprojects {
 	apply plugin: 'java'
 	apply plugin: 'checkstyle'
-  apply plugin: 'org.checkerframework'
+	apply plugin: 'org.checkerframework'
 
 	version = jadxVersion
 
@@ -21,17 +21,26 @@ allprojects {
 		options.encoding = "UTF-8"
 	}
 
-  checkerFramework {
-    checkers = [
-      'org.checkerframework.checker.optional.OptionalChecker',
-    ]
-    extraJavacArgs = [
-      '-AsuppressWarnings=type.anno.before.modifier,type.anno.before.decl.anno',
-      '-AassumePure',
-      '-AwarnUnneededSuppressions'
-   	]
-   excludeTests = true
-  }
+	checkerFramework {
+		checkers = [
+			'org.checkerframework.checker.optional.OptionalChecker',
+		]
+		extraJavacArgs = [
+			'-AsuppressWarnings=type.anno.before.modifier,type.anno.before.decl.anno',
+			'-AassumePure',
+			'-AwarnUnneededSuppressions'
+	 	]
+		excludeTests = true
+	}
+	ext.checkerFrameworkVersion = '3.41.1-SNAPSHOT'
+	dependencies {
+		compileOnly "org.checkerframework:checker-qual:${checkerFrameworkVersion}"
+		testCompileOnly "org.checkerframework:checker-qual:${checkerFrameworkVersion}"
+		checkerFramework "org.checkerframework:checker:${checkerFrameworkVersion}"
+	}
+	configurations.all {
+		resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
+	}
 
 	jar {
 		manifest {
@@ -63,6 +72,7 @@ allprojects {
 		mavenLocal()
 		mavenCentral()
 		google()
+		maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' }
 		// Commented out for now since we're using a local mapping-io fork atm.
         // maven {
 		// 	name 'FabricMC'
