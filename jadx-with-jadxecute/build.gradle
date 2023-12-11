@@ -11,7 +11,7 @@ println("jadx version: ${jadxVersion}")
 allprojects {
 	apply plugin: 'java'
 	apply plugin: 'checkstyle'
-  apply plugin: 'org.checkerframework'
+	apply plugin: 'org.checkerframework'
 
 	version = jadxVersion
 
