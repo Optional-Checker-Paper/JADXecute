@@ -23,13 +23,15 @@ allprojects {
 
 	checkerFramework {
 		checkers = [
-			'org.checkerframework.checker.optional.OptionalChecker',
+      'org.checkerframework.common.util.count.report.ReportChecker',
 		]
 		extraJavacArgs = [
 			'-AsuppressWarnings=type.anno.before.modifier,type.anno.before.decl.anno',
 			'-AassumePure',
 			'-AwarnUnneededSuppressions',
-			'-AassumeAssertionsAreEnabled'
+			'-AassumeAssertionsAreEnabled',
+      '-AReportChecker_warns',
+      "-Astubs=${project.projectDir}/reportoptional.astub",
 	 	]
 		excludeTests = true
 	}
