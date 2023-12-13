@@ -24,12 +24,14 @@ allprojects {
 	checkerFramework {
 		checkers = [
 			'org.checkerframework.checker.optional.OptionalChecker',
+      'org.checkerframework.common.util.report.ReportChecker',
 		]
 		extraJavacArgs = [
 			'-AsuppressWarnings=type.anno.before.modifier,type.anno.before.decl.anno',
 			'-AassumePure',
 			'-AwarnUnneededSuppressions',
-			'-AassumeAssertionsAreEnabled'
+			'-AassumeAssertionsAreEnabled',
+      "-Astubs=${project.projectDir}/reportoptional.astub",
 	 	]
 		excludeTests = true
 	}
@@ -183,3 +185,9 @@ task cleanBuildDir(type: Delete) {
 }
 
 clean.dependsOn(cleanBuildDir)
+
+afterEvaluate {
+     tasks.withType(JavaCompile) {
+         options.compilerArgs << "-Xmaxerrs" << "99999"
+     }
+ }
