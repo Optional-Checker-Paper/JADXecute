@@ -185,3 +185,9 @@ task cleanBuildDir(type: Delete) {
 }
 
 clean.dependsOn(cleanBuildDir)
+
+afterEvaluate {
+    tasks.withType(JavaCompile) {
+        options.compilerArgs << "-Xmaxwarns" << "99999"
+    }
+}
