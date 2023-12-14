@@ -1,0 +1,318 @@
+> Task :buildSrc:extractPluginRequests UP-TO-DATE
+> Task :buildSrc:generatePluginAdapters UP-TO-DATE
+> Task :buildSrc:compileJava UP-TO-DATE
+> Task :buildSrc:compileGroovy NO-SOURCE
+> Task :buildSrc:compileGroovyPlugins UP-TO-DATE
+> Task :buildSrc:pluginDescriptors UP-TO-DATE
+> Task :buildSrc:processResources UP-TO-DATE
+> Task :buildSrc:classes UP-TO-DATE
+> Task :buildSrc:jar UP-TO-DATE
+> Task :buildSrc:assemble UP-TO-DATE
+> Task :buildSrc:compileTestJava NO-SOURCE
+> Task :buildSrc:compileTestGroovy NO-SOURCE
+> Task :buildSrc:pluginUnderTestMetadata UP-TO-DATE
+> Task :buildSrc:processTestResources NO-SOURCE
+> Task :buildSrc:testClasses UP-TO-DATE
+> Task :buildSrc:test NO-SOURCE
+> Task :buildSrc:validatePlugins UP-TO-DATE
+> Task :buildSrc:check UP-TO-DATE
+> Task :buildSrc:build UP-TO-DATE
+
+> Configure project :
+jadx version: dev
+
+> Task :jadx-core:createCheckerFrameworkManifest
+> Task :createCheckerFrameworkManifest
+> Task :jadx-plugins:jadx-java-convert:createCheckerFrameworkManifest
+> Task :jadx-plugins:jadx-dex-input:createCheckerFrameworkManifest
+> Task :jadx-plugins:jadx-java-input:createCheckerFrameworkManifest
+> Task :jadx-gui:createCheckerFrameworkManifest
+> Task :jadx-plugins:jadx-plugins-api:createCheckerFrameworkManifest
+> Task :jadx-plugins:createCheckerFrameworkManifest
+> Task :jadx-plugins:jadx-smali-input:createCheckerFrameworkManifest
+> Task :jadx-cli:createCheckerFrameworkManifest
+> Task :compileJava NO-SOURCE
+> Task :jadx-plugins:compileJava NO-SOURCE
+> Task :jadx-cli:processResources
+> Task :jadx-plugins:jadx-java-input:processResources
+> Task :jadx-plugins:jadx-java-convert:processResources
+> Task :jadx-plugins:jadx-smali-input:processResources
+> Task :processResources NO-SOURCE
+> Task :classes UP-TO-DATE
+> Task :jar
+> Task :assemble
+> Task :jadx-plugins:jadx-smali-input:sourcesJar
+> Task :jadx-plugins:jadx-java-convert:sourcesJar
+> Task :jadx-plugins:processResources NO-SOURCE
+> Task :jadx-plugins:classes UP-TO-DATE
+> Task :jadx-plugins:jadx-dex-input:processResources
+> Task :jadx-plugins:jadx-raung-input:createCheckerFrameworkManifest
+> Task :jadx-plugins:jadx-raung-input:processResources
+> Task :jadx-plugins:jar
+> Task :jadx-plugins:assemble
+> Task :jadx-plugins:jadx-raung-input:sourcesJar
+> Task :jadx-plugins:jadx-java-input:sourcesJar
+> Task :jadx-plugins:jadx-dex-input:sourcesJar
+> Task :jadx-core:processResources
+> Task :jadx-gui:processResources
+> Task :jadx-core:sourcesJar
+
+> Task :jadx-plugins:jadx-plugins-api:compileJava
+/tmp/experiments/optional-paper-counts-repos/JADXecute/jadx-with-jadxecute/jadx-plugins/jadx-plugins-api/src/main/java/jadx/api/plugins/JadxPluginManager.java:140: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.ifPresent(java.util.function.Consumer<? super T>) [METHOD]
+							.ifPresent(result::add);
+							          ^
+/tmp/experiments/optional-paper-counts-repos/JADXecute/jadx-with-jadxecute/jadx-plugins/jadx-plugins-api/src/main/java/jadx/api/plugins/JadxPluginManager.java:140: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.ifPresent(java.util.function.Consumer<? super T>) [METHOD]
+							.ifPresent(result::add);
+							^
+2 warnings
+
+> Task :jadx-plugins:jadx-plugins-api:processResources NO-SOURCE
+> Task :jadx-plugins:jadx-plugins-api:classes
+> Task :jadx-plugins:jadx-plugins-api:jar
+> Task :jadx-plugins:jadx-plugins-api:javadoc
+> Task :jadx-plugins:jadx-plugins-api:javadocJar
+> Task :jadx-plugins:jadx-plugins-api:sourcesJar
+> Task :jadx-plugins:jadx-plugins-api:assemble
+> Task :jadx-plugins:jadx-dex-input:compileJava
+> Task :jadx-plugins:jadx-dex-input:classes
+> Task :jadx-plugins:jadx-dex-input:jar
+> Task :jadx-plugins:jadx-java-convert:compileJava
+> Task :jadx-plugins:jadx-java-convert:classes
+> Task :jadx-plugins:jadx-java-convert:jar
+> Task :jadx-plugins:jadx-java-convert:javadoc
+> Task :jadx-plugins:jadx-java-convert:javadocJar
+> Task :jadx-plugins:jadx-java-convert:assemble
+> Task :jadx-plugins:jadx-dex-input:javadoc
+> Task :jadx-plugins:jadx-dex-input:javadocJar
+> Task :jadx-plugins:jadx-dex-input:assemble
+> Task :jadx-plugins:jadx-java-input:compileJava
+> Task :jadx-plugins:jadx-java-input:classes
+> Task :jadx-plugins:jadx-java-input:jar
+> Task :jadx-plugins:jadx-smali-input:compileJava
+> Task :jadx-plugins:jadx-smali-input:classes
+> Task :jadx-plugins:jadx-smali-input:jar
+> Task :jadx-plugins:jadx-raung-input:compileJava
+> Task :jadx-plugins:jadx-raung-input:classes
+> Task :jadx-plugins:jadx-raung-input:jar
+> Task :jadx-plugins:jadx-smali-input:javadoc
+> Task :jadx-plugins:jadx-smali-input:javadocJar
+> Task :jadx-plugins:jadx-smali-input:assemble
+> Task :jadx-plugins:jadx-raung-input:javadoc
+> Task :jadx-plugins:jadx-raung-input:javadocJar
+> Task :jadx-plugins:jadx-raung-input:assemble
+> Task :jadx-plugins:jadx-java-input:javadoc
+> Task :jadx-plugins:jadx-java-input:javadocJar
+> Task :jadx-plugins:jadx-java-input:assemble
+
+> Task :jadx-core:compileJava
+/tmp/experiments/optional-paper-counts-repos/JADXecute/jadx-with-jadxecute/jadx-core/src/main/java/jadx/api/JadxDecompiler.java:276: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<X>orElseThrow(java.util.function.Supplier<? extends X>) [METHOD]
+					.orElseThrow(IllegalStateException::new);
+					            ^
+/tmp/experiments/optional-paper-counts-repos/JADXecute/jadx-with-jadxecute/jadx-core/src/main/java/jadx/api/JadxDecompiler.java:276: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<X>orElseThrow(java.util.function.Supplier<? extends X>) [METHOD]
+					.orElseThrow(IllegalStateException::new);
+					^
+/tmp/experiments/optional-paper-counts-repos/JADXecute/jadx-with-jadxecute/jadx-core/src/main/java/jadx/api/JadxDecompiler.java:287: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<X>orElseThrow(java.util.function.Supplier<? extends X>) [METHOD]
+					.orElseThrow(IllegalStateException::new);
+					            ^
+/tmp/experiments/optional-paper-counts-repos/JADXecute/jadx-with-jadxecute/jadx-core/src/main/java/jadx/api/JadxDecompiler.java:287: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<X>orElseThrow(java.util.function.Supplier<? extends X>) [METHOD]
+					.orElseThrow(IllegalStateException::new);
+					^
+/tmp/experiments/optional-paper-counts-repos/JADXecute/jadx-with-jadxecute/jadx-core/src/main/java/jadx/api/JadxDecompiler.java:281: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<X>orElseThrow(java.util.function.Supplier<? extends X>) [METHOD]
+					.orElseThrow(IllegalStateException::new)
+					            ^
+/tmp/experiments/optional-paper-counts-repos/JADXecute/jadx-with-jadxecute/jadx-core/src/main/java/jadx/api/JadxDecompiler.java:281: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<X>orElseThrow(java.util.function.Supplier<? extends X>) [METHOD]
+					.orElseThrow(IllegalStateException::new)
+					^
+/tmp/experiments/optional-paper-counts-repos/JADXecute/jadx-with-jadxecute/jadx-core/src/main/java/jadx/api/JadxDecompiler.java:515: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+				.orElse(null);
+				       ^
+/tmp/experiments/optional-paper-counts-repos/JADXecute/jadx-with-jadxecute/jadx-core/src/main/java/jadx/api/JadxDecompiler.java:515: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+				.orElse(null);
+				^
+/tmp/experiments/optional-paper-counts-repos/JADXecute/jadx-with-jadxecute/jadx-core/src/main/java/jadx/api/JadxDecompiler.java:514: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+				.map(this::convertClassNode)
+				    ^
+/tmp/experiments/optional-paper-counts-repos/JADXecute/jadx-with-jadxecute/jadx-core/src/main/java/jadx/api/JadxDecompiler.java:514: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+				.map(this::convertClassNode)
+				^
+/tmp/experiments/optional-paper-counts-repos/JADXecute/jadx-with-jadxecute/jadx-core/src/main/java/jadx/api/JadxDecompiler.java:523: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+				.orElse(null);
+				       ^
+/tmp/experiments/optional-paper-counts-repos/JADXecute/jadx-with-jadxecute/jadx-core/src/main/java/jadx/api/JadxDecompiler.java:523: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+				.orElse(null);
+				^
+/tmp/experiments/optional-paper-counts-repos/JADXecute/jadx-with-jadxecute/jadx-core/src/main/java/jadx/api/JadxDecompiler.java:532: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+				.orElse(null);
+				       ^
+/tmp/experiments/optional-paper-counts-repos/JADXecute/jadx-with-jadxecute/jadx-core/src/main/java/jadx/api/JadxDecompiler.java:532: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+				.orElse(null);
+				^
+/tmp/experiments/optional-paper-counts-repos/JADXecute/jadx-with-jadxecute/jadx-core/src/main/java/jadx/api/JadxDecompiler.java:549: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+				.orElse(null);
+				       ^
+/tmp/experiments/optional-paper-counts-repos/JADXecute/jadx-with-jadxecute/jadx-core/src/main/java/jadx/api/JadxDecompiler.java:549: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+				.orElse(null);
+				^
+/tmp/experiments/optional-paper-counts-repos/JADXecute/jadx-with-jadxecute/jadx-core/src/main/java/jadx/api/JadxDecompiler.java:548: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+				.map(this::convertClassNode)
+				    ^
+/tmp/experiments/optional-paper-counts-repos/JADXecute/jadx-with-jadxecute/jadx-core/src/main/java/jadx/api/JadxDecompiler.java:548: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+				.map(this::convertClassNode)
+				^
+/tmp/experiments/optional-paper-counts-repos/JADXecute/jadx-with-jadxecute/jadx-core/src/main/java/jadx/core/dex/visitors/AttachTryCatchVisitor.java:188: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<X>orElseThrow(java.util.function.Supplier<? extends X>) [METHOD]
+				.orElseThrow(() -> new JadxRuntimeException("Failed to get max type from catch list: " + catchTypes));
+				            ^
+/tmp/experiments/optional-paper-counts-repos/JADXecute/jadx-with-jadxecute/jadx-core/src/main/java/jadx/core/dex/visitors/AttachTryCatchVisitor.java:188: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<X>orElseThrow(java.util.function.Supplier<? extends X>) [METHOD]
+				.orElseThrow(() -> new JadxRuntimeException("Failed to get max type from catch list: " + catchTypes));
+				^
+/tmp/experiments/optional-paper-counts-repos/JADXecute/jadx-with-jadxecute/jadx-core/src/main/java/jadx/core/dex/visitors/regions/RegionMaker.java:348: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+		Optional<Edge> mainEdgeOpt = exitEdges.stream().filter(edge -> edge.getSource() == mainExitBlock).findFirst();
+		               ^
+/tmp/experiments/optional-paper-counts-repos/JADXecute/jadx-with-jadxecute/jadx-core/src/main/java/jadx/core/dex/visitors/regions/RegionMaker.java:348: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+		Optional<Edge> mainEdgeOpt = exitEdges.stream().filter(edge -> edge.getSource() == mainExitBlock).findFirst();
+		                                                                                                           ^
+/tmp/experiments/optional-paper-counts-repos/JADXecute/jadx-with-jadxecute/jadx-core/src/main/java/jadx/core/dex/visitors/regions/RegionMaker.java:349: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+		if (!mainEdgeOpt.isPresent()) {
+		                          ^
+/tmp/experiments/optional-paper-counts-repos/JADXecute/jadx-with-jadxecute/jadx-core/src/main/java/jadx/core/dex/visitors/regions/RegionMaker.java:349: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+		if (!mainEdgeOpt.isPresent()) {
+		                ^
+/tmp/experiments/optional-paper-counts-repos/JADXecute/jadx-with-jadxecute/jadx-core/src/main/java/jadx/core/dex/visitors/regions/RegionMaker.java:352: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+		Edge mainExitEdge = mainEdgeOpt.get();
+		                                   ^
+/tmp/experiments/optional-paper-counts-repos/JADXecute/jadx-with-jadxecute/jadx-core/src/main/java/jadx/core/dex/visitors/regions/RegionMaker.java:352: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+		Edge mainExitEdge = mainEdgeOpt.get();
+		                               ^
+/tmp/experiments/optional-paper-counts-repos/JADXecute/jadx-with-jadxecute/jadx-core/src/main/java/jadx/core/dex/visitors/typeinference/TypeInferenceVisitor.java:203: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+		Optional<ArgType> bestTypeOpt = selectBestTypeFromBounds(bounds);
+		                  ^
+/tmp/experiments/optional-paper-counts-repos/JADXecute/jadx-with-jadxecute/jadx-core/src/main/java/jadx/core/dex/visitors/typeinference/TypeInferenceVisitor.java:203: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+		Optional<ArgType> bestTypeOpt = selectBestTypeFromBounds(bounds);
+		                                                        ^
+/tmp/experiments/optional-paper-counts-repos/JADXecute/jadx-with-jadxecute/jadx-core/src/main/java/jadx/core/dex/visitors/typeinference/TypeInferenceVisitor.java:204: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+		if (!bestTypeOpt.isPresent()) {
+		                          ^
+/tmp/experiments/optional-paper-counts-repos/JADXecute/jadx-with-jadxecute/jadx-core/src/main/java/jadx/core/dex/visitors/typeinference/TypeInferenceVisitor.java:204: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+		if (!bestTypeOpt.isPresent()) {
+		                ^
+/tmp/experiments/optional-paper-counts-repos/JADXecute/jadx-with-jadxecute/jadx-core/src/main/java/jadx/core/dex/visitors/typeinference/TypeInferenceVisitor.java:213: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+		ArgType candidateType = bestTypeOpt.get();
+		                                       ^
+/tmp/experiments/optional-paper-counts-repos/JADXecute/jadx-with-jadxecute/jadx-core/src/main/java/jadx/core/dex/visitors/typeinference/TypeInferenceVisitor.java:213: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+		ArgType candidateType = bestTypeOpt.get();
+		                                   ^
+/tmp/experiments/optional-paper-counts-repos/JADXecute/jadx-with-jadxecute/jadx-core/src/main/java/jadx/core/dex/visitors/typeinference/TypeInferenceVisitor.java:228: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+	private Optional<ArgType> selectBestTypeFromBounds(Set<ITypeBound> bounds) {
+	                          ^
+/tmp/experiments/optional-paper-counts-repos/JADXecute/jadx-with-jadxecute/jadx-core/src/main/java/jadx/core/dex/visitors/typeinference/TypeInferenceVisitor.java:228: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+	private Optional<ArgType> selectBestTypeFromBounds(Set<ITypeBound> bounds) {
+	                          ^
+/tmp/experiments/optional-paper-counts-repos/JADXecute/jadx-with-jadxecute/jadx-core/src/main/java/jadx/core/dex/visitors/typeinference/TypeInferenceVisitor.java:232: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+				.max(typeUpdate.getTypeCompare().getComparator());
+				    ^
+/tmp/experiments/optional-paper-counts-repos/JADXecute/jadx-with-jadxecute/jadx-core/src/main/java/jadx/core/dex/visitors/typeinference/TypeInferenceVisitor.java:556: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+		ArgType bestType = selectBestTypeFromBounds(bounds).orElse(ArgType.UNKNOWN);
+		                                                          ^
+/tmp/experiments/optional-paper-counts-repos/JADXecute/jadx-with-jadxecute/jadx-core/src/main/java/jadx/core/dex/visitors/typeinference/TypeInferenceVisitor.java:556: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+		ArgType bestType = selectBestTypeFromBounds(bounds).orElse(ArgType.UNKNOWN);
+		                                                   ^
+/tmp/experiments/optional-paper-counts-repos/JADXecute/jadx-with-jadxecute/jadx-core/src/main/java/jadx/core/dex/visitors/EnumVisitor.java:209: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+			Optional<FieldNode> valuesOpt = valuesCandidates.stream().filter(f -> f.getName().equals("$VALUES")).findAny();
+			                    ^
+/tmp/experiments/optional-paper-counts-repos/JADXecute/jadx-with-jadxecute/jadx-core/src/main/java/jadx/core/dex/visitors/EnumVisitor.java:209: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+			Optional<FieldNode> valuesOpt = valuesCandidates.stream().filter(f -> f.getName().equals("$VALUES")).findAny();
+			                                                                                                            ^
+/tmp/experiments/optional-paper-counts-repos/JADXecute/jadx-with-jadxecute/jadx-core/src/main/java/jadx/core/dex/visitors/EnumVisitor.java:210: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+			if (valuesOpt.isPresent()) {
+			                       ^
+/tmp/experiments/optional-paper-counts-repos/JADXecute/jadx-with-jadxecute/jadx-core/src/main/java/jadx/core/dex/visitors/EnumVisitor.java:210: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+			if (valuesOpt.isPresent()) {
+			             ^
+/tmp/experiments/optional-paper-counts-repos/JADXecute/jadx-with-jadxecute/jadx-core/src/main/java/jadx/core/dex/visitors/EnumVisitor.java:212: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+				valuesCandidates.add(valuesOpt.get());
+				                                  ^
+/tmp/experiments/optional-paper-counts-repos/JADXecute/jadx-with-jadxecute/jadx-core/src/main/java/jadx/core/dex/visitors/EnumVisitor.java:212: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+				valuesCandidates.add(valuesOpt.get());
+				                              ^
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+43 warnings
+
+> Task :jadx-core:classes
+> Task :jadx-core:jar
+
+> Task :jadx-cli:compileJava
+/tmp/experiments/optional-paper-counts-repos/JADXecute/jadx-with-jadxecute/jadx-cli/src/main/java/jadx/cli/SingleClassMode.java:33: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+						.findFirst().orElse(null);
+						                   ^
+/tmp/experiments/optional-paper-counts-repos/JADXecute/jadx-with-jadxecute/jadx-cli/src/main/java/jadx/cli/SingleClassMode.java:33: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+						.findFirst().orElse(null);
+						            ^
+2 warnings
+
+> Task :jadx-cli:classes
+> Task :jadx-cli:jar
+> Task :jadx-cli:startScripts
+> Task :jadx-cli:distTar
+> Task :jadx-core:javadoc
+> Task :jadx-cli:distZip
+> Task :jadx-cli:assemble
+> Task :jadx-core:javadocJar
+> Task :jadx-core:assemble
+
+> Task :jadx-gui:compileJava
+/tmp/experiments/optional-paper-counts-repos/JADXecute/jadx-with-jadxecute/jadx-gui/src/main/java/jadx/gui/JadxWrapper.java:267: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+				.orElse(null);
+				       ^
+/tmp/experiments/optional-paper-counts-repos/JADXecute/jadx-with-jadxecute/jadx-gui/src/main/java/jadx/gui/JadxWrapper.java:267: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+				.orElse(null);
+				^
+/tmp/experiments/optional-paper-counts-repos/JADXecute/jadx-with-jadxecute/jadx-gui/src/main/java/jadx/gui/JadxWrapper.java:282: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+				.orElse(null);
+				       ^
+/tmp/experiments/optional-paper-counts-repos/JADXecute/jadx-with-jadxecute/jadx-gui/src/main/java/jadx/gui/JadxWrapper.java:282: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+				.orElse(null);
+				^
+/tmp/experiments/optional-paper-counts-repos/JADXecute/jadx-with-jadxecute/jadx-gui/src/main/java/jadx/gui/device/debugger/BreakpointManager.java:107: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+					.orElse(null);
+					       ^
+/tmp/experiments/optional-paper-counts-repos/JADXecute/jadx-with-jadxecute/jadx-gui/src/main/java/jadx/gui/device/debugger/BreakpointManager.java:107: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+					.orElse(null);
+					^
+/tmp/experiments/optional-paper-counts-repos/JADXecute/jadx-with-jadxecute/jadx-gui/src/main/java/jadx/gui/device/debugger/DebugController.java:518: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+							.orElse(null);
+							       ^
+/tmp/experiments/optional-paper-counts-repos/JADXecute/jadx-with-jadxecute/jadx-gui/src/main/java/jadx/gui/device/debugger/DebugController.java:518: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+							.orElse(null);
+							^
+/tmp/experiments/optional-paper-counts-repos/JADXecute/jadx-with-jadxecute/jadx-gui/src/main/java/jadx/gui/device/debugger/DebugController.java:630: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.ifPresent(java.util.function.Consumer<? super T>) [METHOD]
+						.ifPresent(smaliFld -> fldNode.setAlias(smaliFld.getAlias()));
+						          ^
+/tmp/experiments/optional-paper-counts-repos/JADXecute/jadx-with-jadxecute/jadx-gui/src/main/java/jadx/gui/device/debugger/DebugController.java:630: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.ifPresent(java.util.function.Consumer<? super T>) [METHOD]
+						.ifPresent(smaliFld -> fldNode.setAlias(smaliFld.getAlias()));
+						^
+/tmp/experiments/optional-paper-counts-repos/JADXecute/jadx-with-jadxecute/jadx-gui/src/main/java/jadx/gui/device/debugger/DbgUtils.java:167: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+					.orElse(null);
+					       ^
+/tmp/experiments/optional-paper-counts-repos/JADXecute/jadx-with-jadxecute/jadx-gui/src/main/java/jadx/gui/device/debugger/DbgUtils.java:167: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+					.orElse(null);
+					^
+Note: /tmp/experiments/optional-paper-counts-repos/JADXecute/jadx-with-jadxecute/jadx-gui/src/main/java/jadx/gui/ui/codearea/SmaliArea.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+12 warnings
+
+> Task :jadx-gui:classes
+> Task :jadx-gui:jar
+> Task :jadx-gui:startScripts
+> Task :jadx-gui:distTar
+> Task :jadx-gui:distZip
+> Task :jadx-gui:shadowJar
+> Task :jadx-gui:startShadowScripts
+> Task :jadx-gui:shadowDistTar
+> Task :jadx-gui:shadowDistZip
+> Task :jadx-gui:assemble
+
+BUILD SUCCESSFUL in 46s
+79 actionable tasks: 70 executed, 9 up-to-date
