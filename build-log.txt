@@ -21,38 +21,38 @@
 > Configure project :
 jadx version: dev
 
+> Task :jadx-cli:createCheckerFrameworkManifest
+> Task :jadx-plugins:jadx-plugins-api:createCheckerFrameworkManifest
 > Task :jadx-core:createCheckerFrameworkManifest
-> Task :createCheckerFrameworkManifest
-> Task :jadx-plugins:jadx-java-convert:createCheckerFrameworkManifest
+> Task :jadx-gui:createCheckerFrameworkManifest
 > Task :jadx-plugins:jadx-dex-input:createCheckerFrameworkManifest
 > Task :jadx-plugins:jadx-java-input:createCheckerFrameworkManifest
-> Task :jadx-gui:createCheckerFrameworkManifest
-> Task :jadx-plugins:jadx-plugins-api:createCheckerFrameworkManifest
-> Task :jadx-plugins:createCheckerFrameworkManifest
 > Task :jadx-plugins:jadx-smali-input:createCheckerFrameworkManifest
-> Task :jadx-cli:createCheckerFrameworkManifest
-> Task :compileJava NO-SOURCE
-> Task :jadx-plugins:compileJava NO-SOURCE
+> Task :createCheckerFrameworkManifest
+> Task :jadx-plugins:createCheckerFrameworkManifest
+> Task :jadx-plugins:jadx-java-convert:createCheckerFrameworkManifest
 > Task :jadx-cli:processResources
 > Task :jadx-plugins:jadx-java-input:processResources
-> Task :jadx-plugins:jadx-java-convert:processResources
+> Task :jadx-plugins:jadx-dex-input:processResources
 > Task :jadx-plugins:jadx-smali-input:processResources
+> Task :jadx-plugins:jadx-java-convert:processResources
+> Task :jadx-plugins:compileJava NO-SOURCE
+> Task :compileJava NO-SOURCE
+> Task :jadx-plugins:processResources NO-SOURCE
+> Task :jadx-plugins:classes UP-TO-DATE
 > Task :processResources NO-SOURCE
 > Task :classes UP-TO-DATE
 > Task :jar
 > Task :assemble
 > Task :jadx-plugins:jadx-smali-input:sourcesJar
 > Task :jadx-plugins:jadx-java-convert:sourcesJar
-> Task :jadx-plugins:processResources NO-SOURCE
-> Task :jadx-plugins:classes UP-TO-DATE
-> Task :jadx-plugins:jadx-dex-input:processResources
-> Task :jadx-plugins:jadx-raung-input:createCheckerFrameworkManifest
-> Task :jadx-plugins:jadx-raung-input:processResources
 > Task :jadx-plugins:jar
 > Task :jadx-plugins:assemble
+> Task :jadx-plugins:jadx-raung-input:createCheckerFrameworkManifest
+> Task :jadx-plugins:jadx-raung-input:processResources
 > Task :jadx-plugins:jadx-raung-input:sourcesJar
-> Task :jadx-plugins:jadx-java-input:sourcesJar
 > Task :jadx-plugins:jadx-dex-input:sourcesJar
+> Task :jadx-plugins:jadx-java-input:sourcesJar
 > Task :jadx-core:processResources
 > Task :jadx-gui:processResources
 > Task :jadx-core:sourcesJar
@@ -76,33 +76,33 @@ jadx version: dev
 > Task :jadx-plugins:jadx-dex-input:compileJava
 > Task :jadx-plugins:jadx-dex-input:classes
 > Task :jadx-plugins:jadx-dex-input:jar
-> Task :jadx-plugins:jadx-java-convert:compileJava
-> Task :jadx-plugins:jadx-java-convert:classes
-> Task :jadx-plugins:jadx-java-convert:jar
-> Task :jadx-plugins:jadx-java-convert:javadoc
-> Task :jadx-plugins:jadx-java-convert:javadocJar
-> Task :jadx-plugins:jadx-java-convert:assemble
 > Task :jadx-plugins:jadx-dex-input:javadoc
 > Task :jadx-plugins:jadx-dex-input:javadocJar
 > Task :jadx-plugins:jadx-dex-input:assemble
+> Task :jadx-plugins:jadx-java-convert:compileJava
+> Task :jadx-plugins:jadx-java-convert:classes
+> Task :jadx-plugins:jadx-java-convert:jar
 > Task :jadx-plugins:jadx-java-input:compileJava
 > Task :jadx-plugins:jadx-java-input:classes
 > Task :jadx-plugins:jadx-java-input:jar
 > Task :jadx-plugins:jadx-smali-input:compileJava
 > Task :jadx-plugins:jadx-smali-input:classes
 > Task :jadx-plugins:jadx-smali-input:jar
+> Task :jadx-plugins:jadx-java-convert:javadoc
+> Task :jadx-plugins:jadx-java-convert:javadocJar
+> Task :jadx-plugins:jadx-java-convert:assemble
 > Task :jadx-plugins:jadx-raung-input:compileJava
 > Task :jadx-plugins:jadx-raung-input:classes
 > Task :jadx-plugins:jadx-raung-input:jar
 > Task :jadx-plugins:jadx-smali-input:javadoc
 > Task :jadx-plugins:jadx-smali-input:javadocJar
 > Task :jadx-plugins:jadx-smali-input:assemble
-> Task :jadx-plugins:jadx-raung-input:javadoc
-> Task :jadx-plugins:jadx-raung-input:javadocJar
-> Task :jadx-plugins:jadx-raung-input:assemble
 > Task :jadx-plugins:jadx-java-input:javadoc
 > Task :jadx-plugins:jadx-java-input:javadocJar
 > Task :jadx-plugins:jadx-java-input:assemble
+> Task :jadx-plugins:jadx-raung-input:javadoc
+> Task :jadx-plugins:jadx-raung-input:javadocJar
+> Task :jadx-plugins:jadx-raung-input:assemble
 
 > Task :jadx-core:compileJava
 /tmp/experiments/optional-paper-counts-repos/JADXecute/jadx-with-jadxecute/jadx-core/src/main/java/jadx/api/JadxDecompiler.java:276: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<X>orElseThrow(java.util.function.Supplier<? extends X>) [METHOD]
@@ -314,5 +314,5 @@ Note: Recompile with -Xlint:unchecked for details.
 > Task :jadx-gui:shadowDistZip
 > Task :jadx-gui:assemble
 
-BUILD SUCCESSFUL in 46s
+BUILD SUCCESSFUL in 45s
 79 actionable tasks: 70 executed, 9 up-to-date
