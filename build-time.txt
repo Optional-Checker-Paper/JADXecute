@@ -1,0 +1,1 @@
+./gradlew --no-build-cache assemble  0.82s user 0.07s system 7% cpu 12.283 total
