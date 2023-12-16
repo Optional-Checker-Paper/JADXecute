@@ -89,7 +89,7 @@ M V EI2: new jadx.plugins.input.dex.sections.DexMethodProto(List, String) may ex
 M V EI: jadx.plugins.input.dex.sections.DexMethodProto.getArgTypes() may expose internal representation by returning DexMethodProto.argTypes  At DexMethodProto.java:[line 19]
 M V EI2: new jadx.plugins.input.java.data.attributes.debuginfo.LineNumberTableAttr(Map) may expose internal representation by storing an externally mutable object into LineNumberTableAttr.lineMap  At LineNumberTableAttr.java:[line 13]
 M V EI: jadx.plugins.input.java.data.attributes.debuginfo.LineNumberTableAttr.getLineMap() may expose internal representation by returning LineNumberTableAttr.lineMap  At LineNumberTableAttr.java:[line 17]
-Note: /Users/yoo/experiments/JADXecute/jadx-with-jadxecute/jadx-gui/src/main/java/jadx/gui/ui/codearea/SmaliArea.java uses or overrides a deprecated API.
+Note: /JADXecute/jadx-with-jadxecute/jadx-gui/src/main/java/jadx/gui/ui/codearea/SmaliArea.java uses or overrides a deprecated API.
 Note: Recompile with -Xlint:deprecation for details.
 Note: Some input files use unchecked or unsafe operations.
 Note: Recompile with -Xlint:unchecked for details.
